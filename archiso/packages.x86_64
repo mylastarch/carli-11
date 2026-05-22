@@ -144,8 +144,8 @@ kcrash
 
 #calamares
 calamares
-#mylastarch-calamares-config
-mylastarch-calamares-qml-config
+mylastarch-calamares-config
+# mylastarch-calamares-qml-config
 mylastarch-system-installation
 # mylastarch-mirrorlist
 kcrash
