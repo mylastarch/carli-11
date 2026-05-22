@@ -20,9 +20,9 @@ echo
 	desktop="plasma"
 	dmDesktop="plasma"
 
-	mylastarchVersion=26.05.19
+	#mylastarchVersion='26.05.19'
 
-	isoLabel='mylastarch-'$mylastarchVersion'-x86_64.iso'
+	isoLabel='mylastarch-'$(date +%Y.%m.%d)'-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 88-1"
@@ -32,8 +32,8 @@ echo
 
 	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
-	echo "Building version                       : "$mylastarchVersion
-	echo "Iso label                              : "$isoLabel
+	#echo "Building version                       : "$mylastarchVersion
+	#echo "Iso label                              : "$isoLabel
 	echo "Do you have the right archiso version? : "$archisoVersion
 	echo "What is the required archiso version?  : "$archisoRequiredVersion
 	echo "Build folder                           : "$buildFolder

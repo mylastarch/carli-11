@@ -1,3 +1,8 @@
+acl
+adwaita-fonts
+alsa-lib
+alsa-topology-conf
+alsa-ucm-conf
 alsa-utils
 amd-ucode
 arch-install-scripts
@@ -131,21 +136,16 @@ zsh
 
 # MY LAST ARCH
 bash-completion
-plasma-meta
-#kde-applications-meta
-konsole
-packagekit-qt6
 sddm
-partitionmanager
-dolphin
-kate
-kio-admin
-#mylastarch-keyring
+xfce4
+xfce4-goodies
+gnome-terminal
+kcrash
 
 #calamares
 calamares
-mylastarch-calamares-config
-# mylastarch-calamares-qml-config
+#mylastarch-calamares-config
+mylastarch-calamares-qml-config
 mylastarch-system-installation
 # mylastarch-mirrorlist
 kcrash

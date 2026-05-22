@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name="mylastarch"
-iso_label="mylastarch-26.05.19"
+iso_label="mylastarch-$(date +%Y%m)"
 iso_publisher="MY LAST ARCH Linux <https://www.dccwebsite.com>"
 iso_application="MY LAST ARCH Linux Live/Rescue DVD"
-iso_version="26.05.19"
+iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
@@ -13,7 +13,7 @@ arch="x86_64"
 pacman_conf="pacman.conf"
 airootfs_image_type="squashfs"
 airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86' '-b' '1M' '-Xdict-size' '1M')
-bootstrap_tarball_compression=('zstd' '-c' '-T0' '--auto-threads=logical' '--long' '-19')
+#bootstrap_tarball_compression=('zstd' '-c' '-T0' '--auto-threads=logical' '--long' '-19')
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
   ["/etc/gshadow"]="0:0:400"

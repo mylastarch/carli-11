@@ -1,4 +1,4 @@
-# ArcoLinuxIso mylastarch
+# MY LAST ARCH Iso mylastarch
 
 To be able to build you install this package
 

@@ -32,6 +32,11 @@ rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm /root/{.automated_script.sh,.zlogin}
 mv /etc/mylastarch-release /etc/lsb-release
 
+#cleanup xfce
+for i in 'ls /home/'; do rm -rf /home/$i/Desktop/calamares.desktop || exit 0; done
+#for i in 'ls /home/'; do rm -rf /home/$i/.local/share/xfce* || exit 0; done
+
+
 
 echo "Permission of root"
 echo "#################################"

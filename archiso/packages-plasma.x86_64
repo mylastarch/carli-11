@@ -140,17 +140,19 @@ partitionmanager
 dolphin
 kate
 kio-admin
-mylastarch-keyring
+#mylastarch-keyring
 
 #calamares
 calamares
 #mylastarch-calamares-config
 mylastarch-calamares-qml-config
 mylastarch-system-installation
-mylastarch-mirrorlist
+# mylastarch-mirrorlist
 kcrash
 yay-bin
 fastfetch
 
 #Software
 sublime-text-4
+cairo-dock
+cairo-dock-plug-ins
