@@ -9,7 +9,7 @@ echo "#################################"
 pacman-key --init
 pacman-key --populate archlinux
 #pacman-key --populate mylastarch
-
+sudo pacman -Sy
 
 echo "Changing into our own linux.preset"
 echo "#################################"
