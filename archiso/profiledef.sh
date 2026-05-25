@@ -27,4 +27,6 @@ file_permissions=(
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/mylastarch-before"]="0:0:755"
   ["/usr/local/bin/mylastarch-final"]="0:0:755"
+  ["/usr/local/bin/get-nemesis-on-mylastarch"]="0:0:755"
+)
 )
