@@ -119,6 +119,35 @@ echo
 	echo "Making mkarchiso verbose"
 	sudo sed -i 's/quiet="y"/quiet="n"/g' /usr/bin/mkarchiso
 
+#----------------------------------------------------------------------
+
+package="mylastarch-keyring"
+
+#checking if application is already installed or else install
+if pacman -Qi $package &> /dev/null; then
+	
+	echo "################################################################## "
+	echo "mylastarch keyring is already installed"	
+	echo "################################################################## "
+
+else
+
+	wget https://github.com/mylastarch/mylastarch_repo/raw/main/x86_64/mylastarch-keyring-1-7-x86_64.pkg.tar.zst -O /tmp/mylastarch-keyring-1-7-x86_64.pkg.tar.zst
+	sudo pacman -U --noconfirm --needed /tmp/mylastarch-keyring-1-7-x86_64.pkg.tar.zst
+
+fi
+
+# Just cheking if installtion was successful
+if pacman -Qi $package &> /dev/null; then
+
+	echo "################################################################## "
+	echo "############  "$package" has been installed"
+	echo "################################################################## "
+fi
+
+#----------------------------------------------------------------------
+
+
 echo
 echo "################################################################## "
 tput setaf 2
@@ -181,11 +210,11 @@ echo
 	#Setting variables
 
 	#profiledef.sh
-	oldname1='iso_name="MY LAST ARCH'
-	newname1='iso_name="MY LAST ARCH'
+	oldname1='iso_name="mylastarch'
+	newname1='iso_name="mylastarch'
 
-	oldname2='iso_label="MY LAST ARCH'
-	newname2='iso_label="MY LAST ARCH'
+	oldname2='iso_label="mylastarch'
+	newname2='iso_label="mylastarch'
 
 	oldname3='mylastarch'
 	newname3='mylastarch'
